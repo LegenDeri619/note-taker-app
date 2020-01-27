@@ -12,12 +12,12 @@ app.use(express.json());
 app.use(express.static(path.join(__dirname, "public")));
 
 app.get("/", (req, res) => {
-    res.sendFile(path(__dirname, "public", "index.html"));
+    res.sendFile(path(__dirname, "public/index.html"));
     console.log("Index page!");
 });
 
 app.get("/", (req, res) => {
-    res.sendFile(path.join(__dirname, "public", "notes.html"));
+    res.sendFile(path.join(__dirname, "public/notes.html"));
     console.log("Notes Page!");
 });
 
